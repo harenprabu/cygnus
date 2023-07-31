@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Cygnus | Free Resources</title>
+    <link rel="icon" href="assets/images/logo.jpg" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- go to top button -->
+    <a href="#">
+      <button
+        id="topbtn"
+        type="button"
+        class="
+          btn btn-outline-success
+          position-fixed
+          px-2
+          py-1
+          animate__animated animate__slideInRight
+        "
+      >
+        <i class="fas fa-arrow-up"></i></button
+    ></a>
+
+    <!-- navbar  -->
+    <nav
+          id="nav"
+          class="
+            navbar navbar-expand-lg navbar-light
+            bg-light
+            sticky-top
+            py-md-2
+            transition
+          "
+        >
+          <div class="container transition">
+            <a
+              id="nav-heading"
+              class="
+                navbar-brand
+                my-auto
+                py-0
+                animate__animated animate__bounceInLeft
+              "
+              href="index.html"
+            >
+              <h3 class="dark-blue my-0 cygnus">CYGNUS</h3></a
+            >
+            <a
+              id="nav-img"
+              class="
+                navbar-brand
+                my-auto
+                img-fluid
+                d-none
+                animate__animated animate__zoomIn
+              "
+              href="index.html"
+              ><img src="assets/images/logo.jpg" height="30px" class="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="navbar-toggler-icon" id="menubutton"></div>
+            </button>
+            <div
+              class="
+                collapse
+                navbar-collapse
+                animate__animated animate__backInDown
+                transition
+              "
+              id="navbarTogglerDemo02"
+            >
+              <div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="about.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="core_values.html"
+                      >Core Values</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="packages.html"
+                      >Packages</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="partner.html"
+                      >Be Our Partner</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#"
+                      >Free Resources</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex nav-contact">
+                <a
+                  id="phn"
+                  href="https://wa.me/917499470402?text=Hi,%20I%20have%20the%20requirement%20of%20"
+                  class="my-auto lead me-3 text-decoration-none dark-blue"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp fs-2"></i></a>
+                <a
+                  href="contact.html"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                >
+                  <button class="btn btn-info" type="button">
+                    <span class="text-light"> Contact Us </span>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    <!-- ask experts query section-->
+    <section
+          class="px-md-5 px-3 py-2 blue animate__animated animate__fadeInLeftBig"
+        >
+          <div class="row">
+            <div class="row col-md-6 col-7">
+              <span
+                class="col-md-9 col-12 text-md-end text-center h3 my-auto text-light"
+                id="ask_query"
+                ><i class="far fa-comments"></i> &nbsp; Ask Your Query!!</span
+              >
+              <span
+                class="col-md-3 col-12 text-md-start text-center my-auto text-light"
+                >Free Assistance</span
+              >
+            </div>
+            <div class="col-md-6 d-grid gap-2 col-5 px-0">
+              <button
+                class="btn btn-outline-light text-md-start"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#querymodal"
+              >
+                Type Here...
+              </button>
+            </div>
+          </div>
+    </section>
+
+    <!--ask query modal -->
+    <div
+      class="modal fade"
+      id="querymodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Asking doubts are free!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/xeqvkbwz" method="POST">
+              <!--Enter the form link-->
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Doubt:</label>
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  placeholder="Type your query"
+                  autofocus
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">
+                  Send message
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- header -->
+      <header class="animate__animated animate__fadeInLeftBig">
+        <div class="px-md-5 px-4 py-md-5 py-4">
+          <span class="display-1 dark-blue"> Free Resources: </span>
+        </div>
+      </header>
+
+    <!-- main  -->
+    <main class="animate__animated animate__zoomIn">
+      <section class="">
+        <div>
+        <!-- blog slider -->
+
+          <div class="mb-md-5">
+
+            <div class="blog-slider" >
+                <div class="blog-slider__wrp swiper-wrapper"  >
+
+                  <div class="blog-slider__item swiper-slide" >
+                    <div class="blog-slider__img">
+                      
+                      <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2017/07/gst-1498890074.jpg" >
+                    </div>
+                    <div class="blog-slider__content">
+                      <span class="blog-slider__code">2 June 2021</span>
+                      <div class="blog-slider__title">GST Knowledge</div>
+                      <div class="blog-slider__text">Tourism represents world’s third largest export avenue in terms of global earnings after fuel and chemicals. It is also amongst the largest tax generators. Find out how! </div>
+                      <a href="#" class="blog-slider__button" data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvas1"
+                      aria-controls="offcanvas1">READ MORE</a>
+                    </div>
+                  </div>
+
+
+                  <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_639318992_2000133320009280367_371926.jpg" >
+                    </div>
+                    <div class="blog-slider__content">
+                      <span class="blog-slider__code">10 May 2021</span>
+                      <div class="blog-slider__title">Tips on Travel</div>
+                      <div class="blog-slider__text">What do You need when Travel? Impact of Covid on Travel Industry? Contactless Payments are getting Popular in Travel Industry. How combo of work plus vacations are taking new terms?</div>
+                      <a href="#" class="blog-slider__button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2" aria-controls="offcanvas2">READ MORE</a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="blog-slider__pagination"></div>
+            </div>
+              
+            <!-- offcanvas-1 -->
+            <div
+                class="offcanvas offcanvas-end w-100 my-0 "
+                tabindex="-1"
+                id="offcanvas1"
+                aria-labelledby="offcanvasRightLabel"
+                >
+              
+                <div class="offcanvas-header px-md-5">
+                  <h5 id="offcanvasRightLabel" class="display-4 my-0">
+                    GST Knowledge
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body px-md-5 ">
+                  <div class="px-md-5">
+                    Tourism represents world’s third largest export avenue in
+                    terms of global earnings after fuel and chemicals. Hospitality
+                    is not only a high foreign exchange grosser; it is also
+                    amongst the largest tax generators. The Travel and tourism
+                    industry has a measurable contribution in the Indian Economy,
+                    and contribution will only get higher in the near future.
+                  </div>
+                  <h3 class="my-4">Facts about World Tourism</h3>
+                  <ol >
+                    <li>
+                      Travel and tourism is one of the largest industries in India, with a total contribution of over 247 billion U.S. dollars to the country’s GDP and estimated to double in the coming years. Although other parts of the economy sailed on turbulent waters in recent years, the tourism industry had grown as an important source of foreign exchange for the country. And for the people on the ground it has been creating jobs directly and indirectly.
+                    </li>
+                    <li>
+                      In 2017 Travel & Tourism directly supported 118,454,000 jobs (3.8% of total employment). This is expected to rise by 2.2% pa to 150,139,000 jobs (4.2% of total employment) in 2028.
+                    </li>
+                    <li>
+                      In 2017, the total contribution of Travel & Tourism to employment, including jobs indirectly supported by the industry, was 9.9% of total employment (313,221,000 jobs). This is expected to rise by 2.5% pa to 413,556,000 jobs in 2028 (11.6% of total).
+                    </li>
+                    <li>
+                      Visitor exports generated USD1, 494.2bn (6.5% of total exports) in 2017. This is forecast to grow by 3.9% in 2018, and grow by 4.1% pa, from 2018-2028, to USD2, 311.4bn in 2028 (6.9% of total).
+                    </li>
+                    <li>
+                      Travel & Tourism investment in 2017 was USD882.4bn, or 4.5% of total investment. It should rise by 4.3% pa over the next ten years to USD1, 408.3bn in 2028 (5.1% of total).
+                    </li>
+                    
+                  </ol>
+                  <p><h4>GST (Goods and Services Tax) -</h4> It is the biggest indirect tax reform of India. GST is a single tax on the supply of goods and services. It is a destination based tax. GST has subsumed taxes like Central Excise Law, Service Tax Law, VAT, Entry Tax, Octroi, etc. GST is one of the biggest indirect tax reforms in the country. GST is expected to bring together state economies and improve overall economic growth of the nation.</p>
+                  <p>The rate structure for the hotel and tourism industry went through various amendments in all these years after introducing GST Laws and below we are mentioning all these changes in GST Rates.</p>
+                  <p>In the 37th GST council meeting, the union finance minister Nirmala Sitharaman has changed the GST rates on hotel rooms according to their tariff. Let us check out the revised GST rates on hotel room tariff from now onwards:</p>
+                  <img src="assets/images/gst-table.webp"  class="img-fluid my-md-5 my-3 mx-md-5" height="500px">
+                  <p>Before the introduction of the GST, the hotel & restaurant industry was facing problems due to a multiplicity of taxes which includes VAT, Service Tax, Luxury Tax, and even excise duties</p>
+                  <p>Experts observe that the implementation of GST will help the sector by reducing costs for customers, harmonizing taxes, and reducing business transaction costs, but will also have its own set of challenges.</p>
+                  <h4>Negative</h4>
+                  <ul>
+                    <li>	The major challenge is, who have centralized registration, need to have separate registrations for the states as well.</li>
+                    <li>	Government grants the right to states for collecting GST on services.</li>
+                    <li>Increased Compliance Burden- The procedure for all the invoices/receipts towards inward and outward supplies will become cumbersome as each one of them will have to be uploaded in the system. </li>
+                    <li>The concept of credit matching under GST would be very difficult to handle and would lead to increase in working capital requirements. The frequency and number of returns to be filed will go up. In place of a half yearly service tax return, under GST law, one will be required to file state wise monthly three GST returns along with an annual return will also be required to be filed.</li>
+                  </ul>
+                  <h4>Positive Impacts of GST</h4>
+                  <ul>
+                    <li>•	GST was introduced with the motive of one nation one tax. GST has replaced the multiple taxes with one single tax. The lower tax rate slabs seem to attract more tourists in India.</li>
+                    <li>•	Greater Revenue for State Government In case of Hotels and Restaurants the supply is shifted to a place where immovable property is situated. This increase the revenue for the states where they are located. Tax will be added on such income. While Union Government gets revenue from Service Tax on such services. Because of GST, the States having maximum tourist places, hotels or restaurants for tourist shall earn the maximum revenue by way of SGST which will be equivalent to CGST. </li>
+                    <li>•	Companies specializing in food and beverages operations could be the biggest beneficiaries of GST within the hospitality sector. Food and beverages bills have multiple components which inflate the bills by 30- 35%. It is expected that GST to result in savings of 10-15% on the overall bill.</li>
+                    <li>•	Services like Complimentary breakfast which was taxed separately under the VAT regime will be taxed as a bundled service under GST.</li>
+                  </ul>
+                  <h4>Conclusion: </h4>
+                  <p>Well, there is an extensive impact of GST on the tourism industry. However, the people engaged in tourism require to be highly updated with the latest reforms in the GST regime. The introduction of GST in the form of SGST and CGST has given a say to both the government pertaining to the revenue generated in the form of tax. However, better utilization of Input tax credit is still expected and the rates should be revised to give a push and encouragement to the Tourism Industry.</p>
+                  <p>It leads to the optimization of cost and betterment of the flow of the transaction. GST will definitely bring in the positive picture in the long run. Our Government of India has also been making amendments on the areas that need to be worked upon.</p>
+                  <h5>Source and References –</h5>
+                  <p><a href="https://www.jetir.org/papers/JETIR1812C36.pdf" target="_blank">https://www.jetir.org/papers/JETIR1812C36.pdf</a></p>
+                  <p><a href="https://corpbiz.io/learning/impact-of-gst-on-tourism-industry/" target="_blank" rel="noopener noreferrer">https://corpbiz.io/learning/impact-of-gst-on-tourism-industry/</a>
+                  </p>
+                  <p><a href="https://www.statista.com/topics/2076/travel-and-tourism-industry-in-india/" target="_blank" rel="noopener noreferrer">https://www.statista.com/topics/2076/travel-and-tourism-industry-in-india/</a>
+                  </p>
+                </div>
+              
+            </div>
+            <!-- offcanvas-2 -->
+            <div class="offcanvas offcanvas-end w-100 my-0" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header px-md-5">
+                    <h5 id="offcanvasRightLabel" class="display-4">Tips by category  </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body px-md-5">
+                    <div class="px-md-5">
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <h4>What do You need when Travel ?</h4>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              This checklist may go long and long because every individual has it’s own choice. But we’ll point out some major points which will help you to enjoy your trip. Lightweight clothing which can be rolled or layered. First Aid is very essential thing to carry because we can not expect the unexpected. Considering the security, one should always carry a money belt or hidden pocket  because pickpockets are always in the look of travelers. And don’t forget to take your sunglasses with you because it is right to see the world in different colours. Last but most important, keep a good camera with you to capture the moments you’ve seen.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <h4>Impact of Covid on Travel Industry !</h4>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <div>Due to pandemic everything got affected around the globe. Of all the affected industries in the Covid-19 pandemic, the travel industry seems to have endured the hardest shot across the globe, affecting different related areas, for example, Hospitality, travel services, and destination administrators, a wide range of transportation administrations, alongside some more. As per the World Travel and Tourism Council (WTCC), the Covid-19 pandemic is probably going to cost the travel industry nearly USD 22 billion and impacted almost 50 million positions around the world. Hence, it does not shock anyone that the travel industry in India has seen a huge impact post-Covid, in 2020-21 and still struggling. Travel and tourism Industry worldwide is declined to 7% in 2020 only, back to levels of 30 years ago. </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <h4>Contactless Payments are getting Popular in Travel Industry !</h4>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <div>With pandemic many things are changes and it’s also replacing the traditional payment methods. Credit cards, payment links, upi payments and other many applications have taken the place in modern era. Because users have friendly sense of safety now. The straightforward truth is that contactless payments will represent the capacity of your firm to accept the most recent mechanical advancements while remembering the necessities of the end client. Moreover, contactless payment methods can give an extra "firewall" as far as conceivable data breach.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <h4>How combo of work plus vacations are taking new terms ?</h4>
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <div>The characterizing line between business travel and destination travel is starting to blur now. Progressively, travelers are mixing trip reasons, consolidating their business travel with relaxation travel, hence giving a new term “workation”. The distance between two types of travel is fading now, which is a good thing to observe. With this people are understanding the importance of travel along with the work. </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <h4>Diverse attractions :</h4>
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <div>With the diverse culture India is also famous for it’s geographical diversity. India has many attractive beaches, 37 world heritage sites and 10 bio-geographic zones. With the increase of tourism in India, the types of accommodation are also increasing. House boats in Kerala, Royal Palaces in Rajasthan, Hills and Jungle Stays in Himachal, these are some of the popular types of accommodations are present now-a-days.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+ <footer class="footer mt-auto py-3 gray">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-2 col-md-6 ">
+        <a href="index.html" class="text-decoration-none">
+          <div class="text-light h4 px-3 text-center">
+            <img src="assets/images/logo.jpg" height="30px" class="" />
+            Cygnus Voyages Pvt. Ltd.
+          </div>
+        </a>
+        <div class="text-light text-center">
+          Cygnus Office, Bavdhan, Pune Maharashtra 411021
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-2 col-md-6 py-2">
+        <div class="my-auto">
+          <div class="text-center py-1">
+            <a
+              href="about.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >About Us</a
+            >
+          </div>
+          <div class="text-center py-1">
+            <a
+              href="contact.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >Contact Us</a
+            >
+          </div>
+          <div class="text-center py-1">
+            <a
+              href="free_resources.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >GST Knowledge</a
+            >
+          </div>
+          <div class="text-center py-1">
+            <a
+              href="free_resources.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >Tips on Travel</a
+            >
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-lg-2 col-md-6 py-2">
+        <div class="py-1">
+          <a
+            href="core_values.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank"
+            >Core Values</a
+          >
+        </div>
+        <div class="py-1">
+          <a
+            href="packages.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank"
+            >Packages</a
+          >
+        </div>
+        <div class="py-1">
+          <a
+            href="partner.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank"
+            >Be Our Partner</a
+          >
+        </div>
+        <div class="py-1">
+          <a
+            href="free_resources.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank">free Resources</a>
+        </div>
+      </div>
+
+      
+    <div class="col-lg-2 col-md-6 py-2">
+      <div class="py-1">
+        <a
+          href="privacy.html"
+          class="d-block text-decoration-none text-center text-light"
+          target="_blank"
+          >Privacy Policy</a>
+      </div>
+      <div class="py-1">
+        <a
+"
+          href="t&c.html"
+          class="d-block text-decoration-none text-center text-light"
+          target="_blank"
+          >Term & Conditons</a>
+      </div>
+    </div>
+
+      <div
+        class="col-lg-2 col-md-6 d-flex align-items-center justify-content-center"
+      >
+        <div class="fs-3 text-center my-md-4 my-2">
+          <a href="https://wa.me/917499470402?text=Hi,%20I%20have%20the%20requirement%20of%20"
+            class="text-decoration-none px-2"
+            target="_blank"> <i class="fab fa-whatsapp text-light" aria-hidden="true"></i>  </a>
+
+          <a
+            href="https://www.linkedin.com/company/cygnustmc"
+            class="text-decoration-none px-2"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin text-light" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="mailto:contact@cygnusind.in"
+            class="text-decoration-none px-2"
+            target="_blank"
+          >
+            <i class="far fa-envelope text-light" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+    
+  </div>
+
+
+
+    <div class="row">
+      <div class="text-muted col-12 text-center">
+        Developed by
+        <a
+          href="https://www.linkedin.com/in/rahul-arora-2089/"
+          class="text-decoration-none text-muted"
+          target="_blank"
+          >Rahul Arora</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"
+></script>
+<!-- custom js -->
+<script src="assets/js/main.js"></script>
+<!-- font awesome -->
+<script
+  src="https://kit.fontawesome.com/25b53f6e70.js"
+  crossorigin="anonymous"
+></script>
+<script>
+  //splash page
+  $(window).on("load", function () {
+    setTimeout(() => {
+      $("#load").fadeOut("slow");
+    }, 500);
+  });
+</script>
+</body>
+</html>

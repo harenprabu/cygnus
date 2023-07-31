@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cygnus | About Us</title>
+    <link rel="icon" href="assets/images/logo.jpg" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+  </head>
+  <body>
+    <!-- go to top button -->
+    <a href="#">
+      <button
+        id="topbtn"
+        type="button"
+        class="
+          btn btn-outline-success
+          position-fixed
+          px-2
+          py-1
+          animate__animated animate__slideInRight
+        "
+      >
+        <i class="fas fa-arrow-up"></i></button
+    ></a>
+
+    <!-- navbar  -->
+    <nav
+      id="nav"
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-light
+        sticky-top
+        py-md-2
+        transition
+      "
+    >
+      <div class="container transition">
+        <a
+          id="nav-heading"
+          class="
+            navbar-brand
+            my-auto
+            py-0
+            animate__animated animate__bounceInLeft
+          "
+          href="index.html"
+        >
+          <h3 class="dark-blue my-0 cygnus">CYGNUS</h3></a
+        >
+        <a
+          id="nav-img"
+          class="
+            navbar-brand
+            my-auto
+            img-fluid
+            d-none
+            animate__animated animate__zoomIn
+          "
+          href="index.html"
+          ><img src="assets/images/logo.jpg" height="30px" class="ms-3" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="navbar-toggler-icon" id="menubutton"></div>
+        </button>
+        <div
+          class="
+            collapse
+            navbar-collapse
+            animate__animated animate__backInDown
+            transition
+          "
+          id="navbarTogglerDemo02"
+        >
+          <div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="core_values.html"
+                  >Core Values</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="packages.html"
+                  >Packages</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="partner.html"
+                  >Be Our Partner</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="free_resources.html"
+                  >Free Resources</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex nav-contact">
+            <a
+              id="phn"
+              href="https://wa.me/917499470402?text=Hi,%20I%20have%20the%20requirement%20of%20"
+              class="my-auto lead me-3 text-decoration-none dark-blue"
+              target="_blank"
+              ><i class="fab fa-whatsapp fs-2"></i></a>
+            <a
+              href="contact.html"
+              rel="noopener noreferrer"
+              class="text-decoration-none"
+            >
+              <button class="btn btn-info" type="button">
+                <span class="text-light"> Contact Us </span>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ask experts query section-->
+    <section
+      class="px-md-5 px-3 py-2 blue animate__animated animate__fadeInLeftBig"
+    >
+      <div class="row">
+        <div class="row col-md-6 col-7">
+          <span
+            class="col-md-9 col-12 text-md-end text-center h3 my-auto text-light"
+            id="ask_query"
+            ><i class="far fa-comments"></i> &nbsp; Ask Your Query!!</span
+          >
+          <span
+            class="col-md-3 col-12 text-md-start text-center my-auto text-light"
+            >Free Assistance</span
+          >
+        </div>
+        <div class="col-md-6 d-grid gap-2 col-5 px-0">
+          <button
+            class="btn btn-outline-light text-md-start"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#querymodal"
+          >
+            Type Here...
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--ask query modal -->
+    <div
+      class="modal fade"
+      id="querymodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Asking doubts are free!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/xeqvkbwz" method="POST">
+              <!--Enter the form link-->
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Doubt:</label>
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  placeholder="Type your query"
+                  autofocus
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">
+                  Send message
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- main  -->
+    <main class="animate__animated animate__zoomIn">
+      <!-- our story section -->
+      <section class="py-md-5 py-4 px-md-5 mx-0 gradient">
+        <div class="row col-12 mx-0">
+          <div
+            class="
+              col-md-4 col-12
+              about-gif-container
+              px-md-5 px-0
+              pb-md-0 pb-3
+              d-flex
+              align-items-center
+            "
+          >
+            <div id="about-gif" class="px-md-2 text-center">
+              <img
+                src="https://i.pinimg.com/originals/25/e4/fd/25e4fd97ed4e56d546834262434786cc.gif"
+                class=" h-100"
+              />
+            </div>
+          </div>
+          <div class="col-md-8 col-12 px-0">
+            <div class="px-md-5 px-4">
+              <div class="display-2 dark-blue">Our Story</div>
+              <p
+                class="
+                  py-md-3 py-4
+                  px-md-2
+                  pe-md-5
+                  align-center
+                  lead
+                  
+                "
+              >
+                Cygnus Started in the Spring of Twenty First Century, since the
+                beginning we had the vision to change the traditional approach
+                of managing travel amongst the corporate and to overcome the
+                practical issues that a travel manager faced while handling
+                travel for their company with a tech-savvy approach, where our
+                focal point is to create value for a corporate's time, business
+                & money. With the change in Travel trends, we got an exciting
+                opportunity to adapt and innovate our travel design. As a
+                corporate travel management company, we not only look after
+                providing the best service, we also aim to ease the billing
+                structure of our partners in an exponential way.<br />
+                <h5 class="fs-2 px-md-2"
+                  >Simply Put: "Our aim is to be the One Stop Solution for all the Corporate
+                  Travel needs."</h5>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- our presence -->
+      <section class="px-md-5 px-2 py-md-4 m-0 map-color" id="map">
+        <div class="row col-12 mx-0">
+          <div
+            class="
+              col-md-6 col-12
+              px-md-5
+              py-md-5 py-3
+              d-flex
+              align-items-center
+            "
+            id="map-head"
+          >
+            <p class="text-light  my-0 text-center">
+              <span class="display-2  " style="color: #AECE58;">Our Presence</span> <br>
+              <span class="fs-3" style="color: #FFA417;">Find Us Where You Need !</span>
+
+            </p>
+            
+          </div>
+          <div
+            class="col-md-6 col-12 overflow text-center pt-md-0 px-0"
+            id="map-pic"
+          >
+            <img src="assets/images/mapcygnus.jpg" class="img-fluid my-auto" />
+          </div>
+        </div>
+      </section>
+
+      <!-- why choose us -->
+      <section class="">
+        <div id="why-choose" class="row col-12 py-2 px-md-5 px-3 mx-0">
+          <div class="text-center display-2 text-light pt-3">
+            Why Choose Us?
+          </div>
+          <div class="text-center text-light fs-3 py-md-5 py-3">
+            In current times, corporate face challenges to choose any
+            accommodation and/or other travel-related services due to multiple
+            options available in the market. We, at Cygnus, take that load off
+            your shoulders.
+          </div>
+        </div>
+        <!-- about us points -->
+        <div class="row col-12 px-md-5 py-md-5 mx-0 ">
+          <div class="row col-12 mx-0 px-0" id="why-choose-points">
+            <div class="col-md-3 col-12 pt-md-5 py-3 px-2 mx-3  my-2 text-center point">
+              <div>
+                <img src="assets/images/about1.webp" class="img-fluid" />
+              </div>
+
+              <div class="py-3 lead">
+                We at Cygnus not only aiming to ease to provide the accommodation, but also we are working to save the money and hassle as a single point of contact for other travel modes like bus, train, and air as well.
+              </div>
+            </div>
+
+            <div class="col-md-3 col-12 pt-md-5 py-3 px-2 mx-3 my-2 text-center point">
+              <div>
+                <img src="assets/images/about2.webp" class="img-fluid" />
+              </div>
+
+              <div class="py-3 lead">
+                Our services will shortly include managing the statics for
+                spending from end to end, where they may happen to simplify the
+                work of managers and administrations.
+              </div>
+            </div>
+
+            <div class="col-md-3 col-12 pt-md-5 py-3 px-2 mx-3 my-2 text-center point">
+              <div>
+                <img src="assets/images/about3.webp" class="img-fluid" />
+              </div>
+
+              <div class="py-3 lead">
+                At Cygnus, we promise to offer you the greatest value and the
+                most reliable business travel services.
+              </div>
+            </div>
+
+            <div class="col-md-3 col-12 pt-md-5 py-3 px-2 mx-3 my-2 text-center point">
+              <div>
+                <img src="assets/images/about4.webp" class="img-fluid" />
+              </div>
+
+              <div class="py-3 lead">
+                You'll get clarity and vision into employee spends.
+              </div>
+            </div>
+
+            <div class="col-md-3 col-12 pt-md-5 py-3 px-2 mx-3 my-2 text-center point">
+              <div>
+                <img src="assets/images/about5.webp" class="img-fluid" />
+              </div>
+
+              <div class="py-3 lead">
+                We provide hotels appreciated and approved by corporate guests
+                at any location in India.
+              </div>
+            </div>
+
+            <div class="col-md-3 col-12 pt-md-5 py-3 px-2 mx-3 my-2 text-center point">
+              <div>
+                <img src="assets/images/about6.webp" class="img-fluid" />
+              </div>
+
+              <div class="py-3 lead">
+                Our services are not only safe and reliable but also
+                personalized to meet the customer's needs.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- carreers -->
+      <section id="careers">
+        <div class="px-md-5 py-md-5 py-5 text-center text-light">
+          <div class="display-1">Careers</div>
+          <p class="px-md-5 px-3 py-md-5 py-3 fs-2 text-light my-0 pb-md-0">
+            Ahen! If you are visiting this page means you’re interested in
+            onboard with us. But you should know, to work in a destination
+            Management Company is not simply easy. Though you want to enjoy the
+            riddles with us, please share your resume and tell us your favorite
+            role, we’ll disturb you soon.
+          </p>
+        </div>
+
+        <div class=" text-center">
+          <button
+            class="btn btn-warning btn-lg"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#careers-offcanvas"
+            aria-controls="careers-offcanvas"
+          >
+            JOIN US
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- career form -->
+
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="careers-offcanvas"
+      aria-labelledby="careers-offcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 id="careers-offcanvasLabel" class="display-2 px-md-5 text-warning">Join Us</h5> -->
+        <button
+          type="button"
+          class="btn-light btn-close text-reset px-md-5 py-md-5"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
+            rel="stylesheet"
+          />
+
+          <div id="main-container">
+            <header>
+              <h1 id="title">Join Us</h1>
+
+              <p id="description">Fill Personal Information to apply</p>
+            </header>
+            <form id="form-container" action="https://formspree.io/f/moqywozn" method="POST" enctype="multipart/form-data">
+              <!-- NAME -->
+              <div class="question-container">
+                <input
+                  id="fname"
+                  class="row-input"
+                  type="text"
+                  placeholder="Enter your First Name*"
+                  required
+                />
+              </div>
+
+              <div class="question-container">
+                <input
+                  id="lname"
+                  class="row-input"
+                  type="text"
+                  placeholder="Enter your Last Name*"
+                  required
+                />
+              </div>
+
+              <!-- EMAIL -->
+              <div class="question-container">
+                <input
+                  id="email"
+                  class="row-input"
+                  type="email"
+                  placeholder="Enter your Email*"
+                  required
+                />
+              </div>
+              <!-- Phone number -->
+              <div class="question-container">
+                <input
+                  id="mobile"
+                  class="row-input"
+                  type="number"
+                  required min="1"
+                  placeholder="Enter your Mobile Number*"
+                  required
+                />
+              </div>
+              <!-- linked in -->
+              <div class="question-container">
+                <input
+                  id="linkedin"
+                  class="row-input"
+                  type="url"
+                  placeholder="Enter your Linked In profile link"
+                />
+              </div>
+              <!-- resume and cover letter -->
+              <div class="question-container">
+                <label for="resume" class="question-label">Upload your Resume/CV*</label>
+                <input type="file" name="resume" id="resume" required accept="application/pdf, application/msword">
+                <label for="letter" class="question-label">Upload your Cover Letter</label>
+                <input type="file" name="letter" id="letter" accept="application/pdf, application/msword">
+              </div>
+              <!-- SUBMIT -->
+              <button id="submit" type="submit">Submit Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+ <footer class="footer mt-auto py-3 gray">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-2 col-md-6 ">
+        <a href="index.html" class="text-decoration-none">
+          <div class="text-light h4 px-3 text-center">
+            <img src="assets/images/logo.jpg" height="30px" class="" />
+            Cygnus Voyages Pvt. Ltd.
+          </div>
+        </a>
+        <div class="text-light text-center">
+          Cygnus Office, Bavdhan, Pune Maharashtra 411021
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-2 col-md-6 py-2">
+        <div class="my-auto">
+          <div class="text-center py-1">
+            <a
+              href="about.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >About Us</a
+            >
+          </div>
+          <div class="text-center py-1">
+            <a
+              href="contact.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >Contact Us</a
+            >
+          </div>
+          <div class="text-center py-1">
+            <a
+              href="free_resources.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >GST Knowledge</a
+            >
+          </div>
+          <div class="text-center py-1">
+            <a
+              href="free_resources.html"
+              class="text-light text-decoration-none"
+              target="_blank"
+              >Tips on Travel</a
+            >
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-lg-2 col-md-6 py-2">
+        <div class="py-1">
+          <a
+            href="core_values.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank"
+            >Core Values</a
+          >
+        </div>
+        <div class="py-1">
+          <a
+            href="packages.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank"
+            >Packages</a
+          >
+        </div>
+        <div class="py-1">
+          <a
+            href="partner.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank"
+            >Be Our Partner</a
+          >
+        </div>
+        <div class="py-1">
+          <a
+            href="free_resources.html"
+            class="d-block text-decoration-none text-center text-light"
+            target="_blank">free Resources</a>
+        </div>
+      </div>
+
+      
+    <div class="col-lg-2 col-md-6 py-2">
+      <div class="py-1">
+        <a
+          href="privacy.html"
+          class="d-block text-decoration-none text-center text-light"
+          target="_blank"
+          >Privacy Policy</a>
+      </div>
+      <div class="py-1">
+        <a
+          href="t&c.html"
+          class="d-block text-decoration-none text-center text-light"
+          target="_blank"
+          >Term & Conditons</a>
+      </div>
+    </div>
+
+      <div
+        class="col-lg-2 col-md-6 d-flex align-items-center justify-content-center"
+      >
+        <div class="fs-3 text-center my-md-4 my-2">
+          <a href="https://wa.me/917499470402?text=Hi,%20I%20have%20the%20requirement%20of%20"
+            class="text-decoration-none px-2"
+            target="_blank"> <i class="fab fa-whatsapp text-light" aria-hidden="true"></i>  </a>
+
+          <a
+            href="https://www.linkedin.com/company/cygnustmc"
+            class="text-decoration-none px-2"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin text-light" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="mailto:contact@cygnusind.in"
+            class="text-decoration-none px-2"
+            target="_blank"
+          >
+            <i class="far fa-envelope text-light" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+    
+  </div>
+
+
+
+    <div class="row">
+      <div class="text-muted col-12 text-center">
+        Developed by
+        <a
+          href="https://www.linkedin.com/in/rahul-arora-2089/"
+          class="text-decoration-none text-muted"
+          target="_blank"
+          >Rahul Arora</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"
+></script>
+<!-- custom js -->
+<script src="assets/js/main.js"></script>
+<!-- font awesome -->
+<script
+  src="https://kit.fontawesome.com/25b53f6e70.js"
+  crossorigin="anonymous"
+></script>
+<script>
+  //splash page
+  $(window).on("load", function () {
+    setTimeout(() => {
+      $("#load").fadeOut("slow");
+    }, 500);
+  });
+</script>
+</body>
+</html>

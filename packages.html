@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cygnus | Packages</title>
+  <link rel="icon" href="assets/images/logo.jpg" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/packages.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <!-- on page load -->
+  <div class="w-100 h-100 sticky-top gray px-md-5 py-md-5" id="load">
+    <div>
+      <div class="text-center">
+        <img src="assets/images/logo.jpg" class="img-fluid" />
+      </div>
+      <div class="text-center">
+        <span class="text-light display-5 cygnus">CYGNUS</span>
+      </div>
+      <div class="text-light text-center fs-2 py-md-3">
+        One Stop Solution for all Business Travel Needs!
+      </div>
+      <div class="
+            text-light text-center
+            d-flex
+            align-items-center
+            justify-content-center
+          ">
+        <div class="w-25">
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="px-md-2">Loading</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- go to top button -->
+  <a href="#">
+    <button id="topbtn" type="button" class="
+          btn btn-outline-success
+          position-fixed
+          px-2
+          py-1
+          animate__animated animate__slideInRight
+        ">
+      <i class="fas fa-arrow-up"></i></button></a>
+
+  <!-- navbar  -->
+  <nav id="nav" class="
+        navbar navbar-expand-lg navbar-light
+        bg-light
+        sticky-top
+        py-md-2
+        transition
+      ">
+    <div class="container transition">
+      <a id="nav-heading" class="
+            navbar-brand
+            my-auto
+            py-0
+            animate__animated animate__bounceInLeft
+          " href="index.html">
+        <h3 class="dark-blue my-0 cygnus">CYGNUS</h3>
+      </a>
+      <a id="nav-img" class="
+            navbar-brand
+            my-auto
+            img-fluid
+            d-none
+            animate__animated animate__zoomIn
+          " href="index.html"><img src="assets/images/logo.jpg" height="30px" class="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler-icon" id="menubutton"></div>
+      </button>
+      <div class="
+            collapse
+            navbar-collapse
+            animate__animated animate__backInDown
+            transition
+          " id="navbarTogglerDemo02">
+        <div>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="core_values.html">Core Values</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="partner.html">Be Our Partner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="free_resources.html">Free Resources</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex nav-contact">
+          <a id="phn" href="https://wa.me/917499470402?text=Hi,%20I%20have%20the%20requirement%20of%20"
+            class="my-auto lead me-3 text-decoration-none dark-blue" target="_blank"><i
+              class="fab fa-whatsapp fs-2"></i></a>
+          <a href="contact.html" rel="noopener noreferrer" class="text-decoration-none">
+            <button class="btn btn-info" type="button">
+              <span class="text-light"> Contact Us </span>
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ask experts query section-->
+  <section class="px-md-5 px-3 py-2 blue animate__animated animate__fadeInLeftBig">
+    <div class="row">
+      <div class="row col-md-6 col-7">
+        <span class="col-md-9 col-12 text-md-end text-center h3 my-auto text-light" id="ask_query"><i
+            class="far fa-comments"></i> &nbsp; Ask Your Query!!</span>
+        <span class="col-md-3 col-12 text-md-start text-center my-auto text-light">Free Assistance</span>
+      </div>
+      <div class="col-md-6 d-grid gap-2 col-5 px-0">
+        <button class="btn btn-outline-light text-md-start" type="button" data-bs-toggle="modal"
+          data-bs-target="#querymodal">
+          Type Here...
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!--ask query modal -->
+  <div class="modal fade" id="querymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Asking doubts are free!
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="https://formspree.io/f/xeqvkbwz" method="POST">
+            <!--Enter the form link-->
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Doubt:</label>
+              <textarea class="form-control" id="message-text" placeholder="Type your query" autofocus></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">
+                Send message
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main  -->
+  <main class="animate__animated animate__zoomIn overflow">
+    <!-- domestic -->
+    <section id="domestic" class="pb-5">
+      <div class="display-1 dark-blue pt-md-5 px-md-5 px-4 pt-4">
+        Domestic:
+      </div>
+      <div class="wrapper">
+        <!-- <div class="background">
+            <img
+              src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132206/news-slider/background.jpg"
+            />
+          </div> -->
+        <div class="item-bg"></div>
+
+        <div class="news-slider">
+          <div class="news-slider__wrp swiper-wrapper">
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹24000</span>
+                  <!-- <span class="news-date__txt">May</span> -->
+                </div>
+                <div class="display-5">Romantic <br> Manali</div>
+
+                <p class="lead my-0 py-3">5 days 4 night</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?manali,hiking" alt="news" />
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹19000</span>
+                  <!-- <span class="news-date__txt">May</span> -->
+                </div>
+                <div class="display-5">Munnar <br> Alleppey</div>
+
+                <p class="lead my-0 py-3">4 days 3 night</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?munnar,Temple,heritage" alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹28000</span>
+                  <!-- <span class="news-date__txt">May</span> -->
+                </div>
+                <div class="display-5">Udaipur <br>Chittorgarh</div>
+
+                <p class="lead my-0 py-3">4 days 3 nights</p>
+
+                <div class="news__img">
+                  <img
+                    src="https://source.unsplash.com/300x200/?udaipur,chittorgarh,Tower of Fame,Gaumukh Reservoir,Mewar Kingdom"
+                    alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹26000</span>
+                  <!-- <span class="news-date__txt">May</span> -->
+                </div>
+                <div class="display-5">Goa<br> Beaches</div>
+
+                <p class="lead my-0 py-3">5 days 3 nights</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?goa,beach,boat" alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹27000</span>
+                  <!-- <span class="news-date__txt">May</span> -->
+                </div>
+                <div class="display-5">Srinagar <br> Escape</div>
+
+                <p class="lead my-0 py-3">5 days 4 night</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?srinagar,ice,escape" alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹15000</span>
+                  <!-- <span class="news-date__txt">May</span> -->
+                </div>
+                <div class="display-5">Jaisalmer<br> Safari</div>
+
+                <p class="lead my-0 py-3">3 days 2 nights</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?jaisalmer,desert,safari" alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹32000</span>
+                </div>
+                <div class="display-5">Andaman <br>Tour</div>
+
+                <p class="lead my-0 py-3">4 days 3 nights</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?andaman,island tour" alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹32000</span>
+                </div>
+                <div class="display-5">Darjeeling <br>Views</div>
+
+                <p class="lead my-0 py-3">6 days 5 nights</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?darjeeling,Kanchenjunga,tea farms" alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="contact.html" class="news__item" target="_blank">
+                <div class="news-date">
+                  <span class="news-date__title">₹26000</span>
+                </div>
+                <div class="display-5">Sundarban <br>Safari</div>
+
+                <p class="lead my-0 py-3">4 Days 3 Nights</p>
+
+                <div class="news__img">
+                  <img src="https://source.unsplash.com/300x200/?sundarban,safari" alt="news" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="news-slider__ctr">
+            <div class="news-slider__arrows">
+              <button class="news-slider__arrow news-slider-prev">
+                <span class="icon-font">
+                  <svg class="icon icon-arrow-left">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="news-slider__arrow news-slider-next">
+                <span class="icon-font">
+                  <svg class="icon icon-arrow-right">
+                    <use xlink:href="#icon-arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="news-slider__pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <svg hidden="hidden">
+        <defs>
+          <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+            <title>arrow-left</title>
+            <path
+              d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z">
+            </path>
+          </symbol>
+          <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+            <title>arrow-right</title>
+            <path
+              d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z">
+            </path>
+          </symbol>
+        </defs>
+      </svg>
+    </section>
+    <!-- international -->
+    <section class="px-md-5 px-4 py-md-5 py-5 gradient">
+      <div class="display-1 dark-blue py-3">International:</div>
+      <!-- <div
+          id="international"
+          class="px-md-5 d-flex align-items-center justify-content-center"
+        >
+          <img src="assets/images/international.png" class="img-fluid" />
+        </div> -->
+      <div class="row col-12 mx-0 px-md-5" id="international">
+        <div class="col-md-4 col-6">
+          <img src="assets/images/country1.png" class="img-fluid" />
+        </div>
+        <div class="col-md-4 col-6">
+          <img src="assets/images/country2.png" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/country3.png" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/country4.png" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/country5.png" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/country6.png" class="img-fluid" />
+        </div>
+      </div>
+      <div class="px-md-5 mx-md-5">
+        <p class="lead my-0 py-3">
+          Oops!! Pandemic is there. Due to the ongoing crisis, we are not
+          giving any international packages as of now. It’ll be resumed soon.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer mt-auto py-3 gray">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-2 col-md-6 ">
+          <a href="index.html" class="text-decoration-none">
+            <div class="text-light h4 px-3 text-center">
+              <img src="assets/images/logo.jpg" height="30px" class="" />
+              Cygnus Voyages Pvt. Ltd.
+            </div>
+          </a>
+          <div class="text-light text-center">
+            Cygnus Office, Bavdhan, Pune Maharashtra 411021
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-2 col-md-6 py-2">
+          <div class="my-auto">
+            <div class="text-center py-1">
+              <a href="about.html" class="text-light text-decoration-none" target="_blank">About Us</a>
+            </div>
+            <div class="text-center py-1">
+              <a href="contact.html" class="text-light text-decoration-none" target="_blank">Contact Us</a>
+            </div>
+            <div class="text-center py-1">
+              <a href="free_resources.html" class="text-light text-decoration-none" target="_blank">GST Knowledge</a>
+            </div>
+            <div class="text-center py-1">
+              <a href="free_resources.html" class="text-light text-decoration-none" target="_blank">Tips on Travel</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-lg-2 col-md-6 py-2">
+          <div class="py-1">
+            <a href="core_values.html" class="d-block text-decoration-none text-center text-light" target="_blank">Core
+              Values</a>
+          </div>
+          <div class="py-1">
+            <a href="packages.html" class="d-block text-decoration-none text-center text-light"
+              target="_blank">Packages</a>
+          </div>
+          <div class="py-1">
+            <a href="partner.html" class="d-block text-decoration-none text-center text-light" target="_blank">Be Our
+              Partner</a>
+          </div>
+          <div class="py-1">
+            <a href="free_resources.html" class="d-block text-decoration-none text-center text-light"
+              target="_blank">free Resources</a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 py-2">
+          <div class="py-1">
+            <a href="privacy.html" class="d-block text-decoration-none text-center text-light" target="_blank">Privacy
+              Policy</a>
+          </div>
+          <div class="py-1">
+"
+<a href="t&c.html" class="d-block text-decoration-none text-center text-light" target="_blank">Term & Conditons</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 d-flex align-items-center justify-content-center">
+          <div class="fs-3 text-center my-md-4 my-2">
+            <a href="https://wa.me/917499470402?text=Hi,%20I%20have%20the%20requirement%20of%20"
+              class="text-decoration-none px-2" target="_blank"> <i class="fab fa-whatsapp text-light"
+                aria-hidden="true"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/company/cygnustmc" class="text-decoration-none px-2" target="_blank">
+              <i class="fab fa-linkedin text-light" aria-hidden="true"></i>
+            </a>
+
+            <a href="mailto:contact@cygnusind.in" class="text-decoration-none px-2" target="_blank">
+              <i class="far fa-envelope text-light" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="row">
+        <div class="text-muted col-12 text-center">
+          Developed by
+          <a href="https://www.linkedin.com/in/rahul-arora-2089/" class="text-decoration-none text-muted"
+            target="_blank">Rahul Arora</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="assets/js/main.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/25b53f6e70.js" crossorigin="anonymous"></script>
+  <script>
+    //splash page
+    $(window).on("load", function () {
+      setTimeout(() => {
+        $("#load").fadeOut("slow");
+      }, 500);
+    });
+  </script>
+</body>
+
+</html>
